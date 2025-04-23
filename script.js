@@ -79,7 +79,7 @@ async function otherChar(char) {
         }
 
 async function returnHints(guessWord) {
-    const correctWord = wordOfTheDay.word
+    const correctWord = "label"
     let objOfGuessWord = makeItAsObj(guessWord) // {'t': 2, 'r': 1, 'e': 1, 'a': 1}
     let objOfCorrectWord = makeItAsObj(correctWord) // {'h': 2, 'i': 1, 't': 1, 'c': 1}
     for (let i=0; i < guessWord.length; i++) {
