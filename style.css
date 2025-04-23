@@ -1,0 +1,95 @@
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: black solid 1px;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 500px;
+    width: 500px;
+    justify-self: center;
+    margin-top: 50px;
+
+}
+
+.letterbox {
+    display: flex;
+    border: dimgrey solid 4px;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    max-width: 60px;
+    max-height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+}
+
+.blink {
+    animation-name: blink;
+    animation-duration: 1s;
+}
+
+.colory {
+    animation-name: colory;
+    animation-duration: 5s;
+}
+@keyframes blink {
+    25% {
+        border: red solid 5px;
+    }
+    50% {
+        border: black solid 4px;
+    }
+    75% {
+        border: red solid 5px;
+    }
+    100% {
+        border: black solid 4px;
+    }
+}
+@keyframes colory {
+    10% {
+        color: lightblue;
+    }
+    20% {
+        color: lightcyan;
+    }
+    30% {
+        color: darkcyan;
+    }
+    40% {
+        color: mediumblue;
+    }
+    50% {
+        color: blue;
+    }
+    60% {
+        color: darkblue;
+    }
+    70% {
+        color: blueviolet;
+    }
+    80% {
+        color: darkviolet;
+    }
+    90% {
+        color: midnightblue;
+    }
+    100% {
+        color: black;
+    }
+}
+
+.green {
+    background-color: green;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
