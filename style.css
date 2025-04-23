@@ -1,3 +1,9 @@
+body {
+    display: flex;
+    aligh-items: center;
+    justify-content: center;
+}
+
 .heading {
     display: flex;
     align-items: center;
