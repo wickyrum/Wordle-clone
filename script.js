@@ -1,5 +1,3 @@
-import { makeItAsObj } from "/objMaker.js"
-
 const urlGet = "https://words.dev-apis.com/word-of-the-day?random=1"
 const urlPost = "https://words.dev-apis.com/validate-word"
 const alphabets = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
@@ -107,6 +105,21 @@ async function returnHints(guessWord) {
     }
 
 }
+
+function makeItAsObj(word) {
+    let objOfCorrectWord = {}
+    for (let i = 0; i < word.length; i++) {
+        Object.assign(objOfCorrectWord, {[word[i]]: 0})
+        if (word[i] in objOfCorrectWord) {
+            let count = word.split(word[i]).length-1
+            objOfCorrectWord[word[i]] += count
+
+        }
+
+    }
+    return objOfCorrectWord;
+}
+
 
 
 }
